@@ -3,17 +3,21 @@ to get your API KEY sign up in subdl.com then you'll find it withing your accoun
 use example:
 
 1: Search subtitles for a movie:
-
+```powershell
 python main.py YOUR_API_KEY --film-name "Inception" --type movie --languages EN,AR,FR
-
+```
 2: Search subtitles for a tv series:
-
+```
 python main.py YOUR_API_KEY --film-name "Game of Thrones" --type tv --season-number 1 --episode-number 1 --languages EN
-
+```
 NOTE: for now as I tried lots of series have no recorded season-number and episode number so it will be shown as zeroes 
 better not to use season number and episode number like this:
+```powershell
 python main.py YOUR_API_KEY --film-name "Game of Thrones" --type tv --languages EN
+```
 
+example output:
+```python
 result:
 {
   "status": true,
@@ -79,7 +83,7 @@ result:
     .........etc
   ]
 }
-
+```
 
 
 
